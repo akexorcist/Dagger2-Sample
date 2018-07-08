@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.menu.MenuActivity">
+
+    <Button
+        android:id="@+id/buttonPlainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:text="Plain Activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonActivityWithViewModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Activity with View Model\nUtil and Context Util in View Model are here"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPlainActivity"
+        app:layout_constraintStart_toStartOf="@+id/buttonPlainActivity"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlainActivity" />
+
+    <Button
+        android:id="@+id/buttonActivityWithViewModelAndRepository"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Activity with View Model and Repository"
+        app:layout_constraintEnd_toEndOf="@+id/buttonActivityWithViewModel"
+        app:layout_constraintStart_toStartOf="@+id/buttonActivityWithViewModel"
+        app:layout_constraintTop_toBottomOf="@+id/buttonActivityWithViewModel" />
+
+    <Button
+        android:id="@+id/buttonPlainActivityWithContextUtil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Plain Activity with Context Util"
+        app:layout_constraintEnd_toEndOf="@+id/buttonActivityWithViewModelAndRepository"
+        app:layout_constraintStart_toStartOf="@+id/buttonActivityWithViewModelAndRepository"
+        app:layout_constraintTop_toBottomOf="@+id/buttonActivityWithViewModelAndRepository" />
+
+    <Button
+        android:id="@+id/buttonPlainActivityWithPlainFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Plain Activity with Plain Fragment"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPlainActivityWithContextUtil"
+        app:layout_constraintStart_toStartOf="@+id/buttonPlainActivityWithContextUtil"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlainActivityWithContextUtil" />
+
+    <Button
+        android:id="@+id/buttonActivityWithViewModelAndFragmentWithViewModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Activity with View Model\nand Fragment with View Model"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPlainActivityWithPlainFragment"
+        app:layout_constraintStart_toStartOf="@+id/buttonPlainActivityWithPlainFragment"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlainActivityWithPlainFragment" />
+</androidx.constraintlayout.widget.ConstraintLayout>
